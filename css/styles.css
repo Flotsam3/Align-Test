@@ -23,12 +23,12 @@ body {
 .container-buttons {
     text-align: center;
     margin: 100px auto;
-    width: 800px;
+    width: 1000px;
     height: 80px;
     /* border: 3px solid #333; */
 }
 
-.use-margin, .use-text-align {  
+.use-margin, .use-text-align, .reset {  
     display: inline-block;
     margin: 0 40px;
     width: 200px;
@@ -41,7 +41,7 @@ body {
     font-size: 18px;
 }
 
-.use-margin:hover, .use-text-align:hover {
+.use-margin:hover, .use-text-align:hover, .reset:hover {
     background-color: rgb(90, 202, 96);
 }
 
@@ -64,4 +64,31 @@ body {
     background-color: rgb(241, 230, 127);
     text-align: center;
     font-size: 18pt;
+}
+
+table {
+    color: seashell;
+    width: 1400px;
+    font-size: 18pt;
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table .head {
+    color: rgb(36, 35, 35);
+    font-weight: bolder;
+    vertical-align: top;
+}
+
+.blue {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(49, 49, 209);
+}
+
+.red {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(167, 36, 36);
 }

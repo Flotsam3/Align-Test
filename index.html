@@ -12,7 +12,7 @@
         <div>2</div>
         <div>3</div>
     </div>
-    <footer>
+    <buttons>
         <div class="container-buttons">
             <a href="margin.html">
                 <div class="use-margin"><span>margin</span></div>
@@ -20,7 +20,32 @@
             <a href="text-align.html">
                 <div class="use-text-align"><span>text-align</span></div>
             </a>
+            <a href="index.html">
+                <div class="reset active"><span>reset</span></div>
+            </a>
         </div>
-    </footer>
+    </buttons>
+        <table>
+            <tr>
+                <td class="head">Given:</td>
+                <td>A single <span class="blue">big blue Div-container</span> and inside this <span class="blue">blue Div-container</span> three <span class="red">small red Div-containers</span>.</td>
+            </tr>
+            <tr>
+                <td class="head">Challenge:</td>
+                <td>Horizontally centering the three <span class="red">red Div-containers</span> inside the <span class="blue">blue Div-container</span>.</td>
+            </tr>
+            <tr>
+                <td class="head">Solution:</td>
+                <td>Using "text-align=center" while targeting the <span class="blue">blue container class</span> in the style.css file.</td>
+            </tr>
+            <tr>
+                <td class="head">Problem:</td>
+                <td>Why is "margin: auto" while targeting the same <span class="blue">blue container class</span> not also centering the three <span class="red">red containers</span> even though it's supposed to center objects.</td>
+            </tr>
+            <tr>
+                <td class="head">Explanation:</td>
+                <td>"text-align=center" is used to align the content to center, however "margin: auto" is used to align the element itself to center. In more detail for our example: Targeting the <span class="blue">blue-container class</span> of the css-file and using "text-align=center" centers the three <span class="red">red containers</span> inside the <span class="blue">big blue container</span>. Applying "margin: auto" from the same location does not center the three <span class="red">red containers</span> instead it centers the <span class="blue">blue container</span> according to the body (the whole screenwidth in this case). In other words - "margin: auto" modifies the children-elements, "text-align=center" modifies the targeted element itself.</td>
+            </tr>
+        </table>
 </body>
 </html>
